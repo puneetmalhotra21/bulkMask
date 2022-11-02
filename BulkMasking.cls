@@ -112,13 +112,13 @@ global class BulkMasking implements Database.Batchable<String>, Database.Statefu
             sObject newSObject = (sObject)s;
             for (String emailFld : EmailFields) {
                 if (newSObject.get(emailFld) != null) {
-                    string updatedEmail = 'testdsmtContactemail@dsmtsupporttest.com';
+                    string updatedEmail = 'JUNK_EMAIL_OR_ANY_EMAIl_TO_Mask_EMAIl_Field';
                     newSObject.put(EmailFld, updatedEmail);
                 }
             }   
         for (String phone : PhoneFields) {
                 if (newSObject.get(phone) != null) {
-                    String updatedPhone = '111-111-1111';
+                    String updatedPhone = '111-111-1111'; // JUNK_PHONE_OR_ANY_PHONE_TO_Mask_PHONE_Field
                     newSObject.put(phone, updatedPhone);
                 }
             }           
