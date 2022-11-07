@@ -1,7 +1,6 @@
 global class BulkMasking implements Database.Batchable<String>, Database.Stateful{
 
    public final  List<String> objList;
-   public Set<String> queryList;
    public  List<QueryClass> querytosend;
     
    public BulkMasking (String objStr){
