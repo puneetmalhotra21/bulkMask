@@ -145,7 +145,7 @@ global class BulkMasking implements Database.Batchable<String>, Database.Statefu
        
         Messaging.SingleEmailMessage email =new Messaging.SingleEmailMessage();
        
-        String[] toAddresses = new list<string> {'puneet.malhotra@clearesult.com'};
+        String[] toAddresses = new list<string> {'Your_Email'};
         String subject ='Field Masking Data';
         email.setSubject(subject);
         email.setToAddresses( toAddresses );
